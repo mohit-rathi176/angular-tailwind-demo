@@ -1,0 +1,17 @@
+<header>
+  <div class="flex p-5 items-center justify-between relative">
+		<div class="flex items-center gap-4 hover:cursor-pointer">
+			<img src="../assets/images/tailwind_logo.svg" class="w-12" />
+			<span class="block text-2xl">Tailwind</span>
+		</div>
+    <nav class="flex sm:flex-row flex-col sm:items-center gap-4 sm:relative absolute left-0 right-0 bottom-0 sm:translate-y-0 translate-y-full sm:p-0 px-5 sm:h-auto h-0 overflow-clip transition-all duration-200 bg-white" [class.h-screen]="isMenuVisible">
+      <a href="#" class="hover:text-gray-900">First Link</a>
+      <a href="#" class="hover:text-gray-900">Second Link</a>
+      <a href="#" class="hover:text-gray-900">Third Link</a>
+      <a href="#" class="hover:text-gray-900">Fourth Link</a>
+    </nav>
+		<button (click)="toggleMenu()" class="sm:hidden text-2xl">
+			<i class="fa-solid fa-bars"></i>
+		</button>
+  </div>
+</header>
