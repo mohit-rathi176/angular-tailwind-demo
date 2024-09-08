@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { PricingComponent } from './components/pricing/pricing.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HeroComponent, FooterComponent],
+  declarations: [AppComponent, HeaderComponent, HeroComponent, FooterComponent, PricingComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
